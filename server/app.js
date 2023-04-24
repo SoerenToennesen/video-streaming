@@ -74,6 +74,10 @@ app.get("/video/:id/poster", (req, res) => {
     thumbsupply.generateThumbnail(`assets/${req.params.id}.mp4`).then(thumb => res.sendFile(thumb));
 })
 
+app.get("/video/:id/caption", (req, res) =>
+    res.sendFile("assets/captions/sample.vtt", { root: __dirname})
+);
+
 app.listen(4000, () => {
     console.log("Listening on port " + 4000);
 })

@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from "react";
 import { Link } from "react-router-dom";
+import Header from './Header';
+import Footer from './Footer';
 
 export function Home() {
     const [videos, setVideos] = useState([]);
@@ -17,6 +19,7 @@ export function Home() {
     }, []);
     return (
         <div className="App App-header">
+            <Header />
             <div className="container">
                 <div className="row">
                     {videos.map(video =>
@@ -34,6 +37,7 @@ export function Home() {
                     )}
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
