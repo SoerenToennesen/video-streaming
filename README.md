@@ -23,7 +23,13 @@ TODO
 <a name="howtorun"></a>
 ## How to run
 
-TODO
+Server:
+
+``npm run dev``
+
+Client:
+
+``npm start``
 
 
 
