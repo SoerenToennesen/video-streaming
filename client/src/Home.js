@@ -20,7 +20,7 @@ export function Home() {
             <div className="container">
                 <div className="row">
                     {videos.map(video =>
-                        <div className="col-md-4" key={video.id}>
+                        <div className="col-md-3" key={video.id}>
                             <Link to={`/player/${video.id}`}>
                                 <div className="card border-0">
                                     <img src={`http://localhost:4000${video.poster}`} alt={video.name} />

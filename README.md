@@ -23,6 +23,10 @@ TODO
 <a name="howtorun"></a>
 ## How to run
 
+### Prerequisites:
+
+- FFMPEG
+
 Server:
 
 ``npm run dev``
